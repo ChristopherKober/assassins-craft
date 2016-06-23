@@ -3,13 +3,13 @@
 {
   "modid": "assassinscraft",
   "name": "Assassin's Craft",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "description": "An adventure add-on to Minecraft that explores Steve's ancient ancestors' memories and actions. Influenced by Ubisoft's Assassin's Creed franchise.",
+  "version": "",
   "mcversion": "${mcversion}",
-  "url": "",
+  "url": "",    
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Natsfan555"],
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
