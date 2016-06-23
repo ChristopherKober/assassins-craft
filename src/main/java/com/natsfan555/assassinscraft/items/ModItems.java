@@ -8,7 +8,10 @@ public final class ModItems {
 	public static Item appleOfEden;
 
 	public static void createItems(){
-		GameRegistry.registerItem(appleOfEden = new AppleOfEdenItem("apple_of_eden"), "apple_of_eden");
+		
+		appleOfEden = new ItemAppleOfEden("apple_of_eden");
+		GameRegistry.register(appleOfEden);
+		
 	}
 	
 }

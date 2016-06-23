@@ -1,8 +1,9 @@
 [
+
 {
   "modid": "assassinscraft",
   "name": "Assassin's Craft",
-  "description": "This modification to Minecraft aims to add Assassin's craft adventure.",
+  "description": "Example placeholder mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

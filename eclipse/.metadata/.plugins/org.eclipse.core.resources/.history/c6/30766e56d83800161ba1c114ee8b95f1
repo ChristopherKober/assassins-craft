@@ -9,7 +9,8 @@ public class AppleOfEdenItem extends Item {
 		super();
 		
 		this.setUnlocalizedName(unlocalizedName);
-		this.setCreativeTab(CreativeTabs.TOOLS);
+		this.setCreativeTab(CreativeTabs.tabTools);
+		this.setRegistryName(unlocalizedName);
 	}
 	
 }
