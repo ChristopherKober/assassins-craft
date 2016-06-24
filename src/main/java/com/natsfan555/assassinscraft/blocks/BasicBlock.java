@@ -12,7 +12,7 @@ public class BasicBlock extends Block {
         this.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
         this.setHardness(hardness);
         this.setResistance(resistance);
-        this.setRegistryName(unlocalizedName);
+        
     }
 	
 	public BasicBlock(String unlocalizedName, float hardness, float resistance) {

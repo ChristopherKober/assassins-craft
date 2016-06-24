@@ -13,6 +13,7 @@ public final class BlockRenderRegister {
 	
 	public static void registerBlockRenderer() {
 		reg(ModBlocks.altarOfEden);
+		reg(ModBlocks.animus);
 	}
 	
 	public static void reg(Block block) {
