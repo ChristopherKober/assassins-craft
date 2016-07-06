@@ -9,6 +9,7 @@ public final class ModBlocks {
 	
 	public static Block altarOfEden;
 	public static Block animus;
+	public static Block dataBlock;
 	
 	public static void createBlocks() {
 		
@@ -33,6 +34,18 @@ public final class ModBlocks {
 		ItemBlock animusItem = new ItemBlock(animus);
 		animusItem.setRegistryName("animus");
 		GameRegistry.register(animusItem);
+		
+		dataBlock = new BlockDataBlock();
+		dataBlock.setUnlocalizedName("dataBlock");
+		dataBlock.setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
+		dataBlock.setRegistryName("dataBlock");
+		GameRegistry.register(dataBlock);
+		
+		ItemBlock dataBlockItem = new ItemBlock(dataBlock);
+		dataBlockItem.setRegistryName("dataBlock");
+		GameRegistry.register(dataBlockItem);
+		
+		
 	}
 
 }

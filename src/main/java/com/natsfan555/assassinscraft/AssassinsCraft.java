@@ -1,5 +1,7 @@
 package com.natsfan555.assassinscraft;
 
+import com.natsfan555.assassinscraft.reference.Reference;
+
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;

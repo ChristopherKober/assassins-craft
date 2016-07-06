@@ -1,7 +1,7 @@
 package com.natsfan555.assassinscraft.client.render.items;
 
-import com.natsfan555.assassinscraft.Reference;
 import com.natsfan555.assassinscraft.items.ModItems;
+import com.natsfan555.assassinscraft.reference.Reference;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;

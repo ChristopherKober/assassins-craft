@@ -1,11 +1,31 @@
 package com.natsfan555.assassinscraft.blocks;
 
+import com.natsfan555.assassinscraft.tileentity.TileEntityAnimus;
+
 import net.minecraft.block.Block;
+import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.BlockStateContainer;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemStack;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.EnumFacing;
+import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.World;
+import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockDataBlock extends Block implements ITileEntityProvider {
 
@@ -17,7 +37,7 @@ public class BlockDataBlock extends Block implements ITileEntityProvider {
         setRegistryName("datablock");
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());
-        GameRegistry.registerTileEntity(DataTileEntity.class, "datablock");
+        GameRegistry.registerTileEntity(TileEntityAnimus.class, "datablock");
     }
 
     @SideOnly(Side.CLIENT)
@@ -27,11 +47,11 @@ public class BlockDataBlock extends Block implements ITileEntityProvider {
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new DataTileEntity();
+        return new TileEntityAnimus();
     }
 
-    private DataTileEntity getTE(World world, BlockPos pos) {
-        return (DataTileEntity) world.getTileEntity(pos);
+    private TileEntityAnimus getTE(World world, BlockPos pos) {
+        return (TileEntityAnimus) world.getTileEntity(pos);
     }
 
     @Override
@@ -47,7 +67,7 @@ public class BlockDataBlock extends Block implements ITileEntityProvider {
                 } else {
                     counter = getTE(world, pos).increment();
                 }
-                player.addChatComponentMessage(new TextComponentString(TextFormatting.GREEN + "Counter: " + counter));
+                player.addChatComponentMessage((ITextComponent) new TextComponentString(TextFormatting.GREEN + "Counter: " + counter));
             }
         }
         // Return true also on the client to make sure that MC knows we handled this and will not try to place

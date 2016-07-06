@@ -1,8 +1,7 @@
 package com.natsfan555.assassinscraft.client.render.blocks;
 
-import com.natsfan555.assassinscraft.Reference;
-
 import com.natsfan555.assassinscraft.blocks.ModBlocks;
+import com.natsfan555.assassinscraft.reference.Reference;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.Minecraft;
