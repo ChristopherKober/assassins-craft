@@ -8,7 +8,7 @@ public final class ModTileEntities {
 	public static TileEntityAnimus animus;
 
     public static void init() {
-        //GameRegistry.registerTileEntity(animus, "assassins_craft__animus");
+        GameRegistry.registerTileEntity(TileEntityAnimus.class, "assassins_craft__animus");
     }
 
 }
