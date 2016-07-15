@@ -4,6 +4,8 @@ package com.natsfan555.assassinscraft.tileentity;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.natsfan555.assassinscraft.blocks.ContainerAnimus;
+
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -57,7 +59,7 @@ public class TileEntityAnimus extends TileEntity implements IInteractionObject {
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return null;
+		return "assassinscraft_animus";
 	}
 
 	@Override
@@ -75,13 +77,13 @@ public class TileEntityAnimus extends TileEntity implements IInteractionObject {
 	@Override
 	public Container createContainer(InventoryPlayer playerInventory, EntityPlayer playerIn) {
 		// TODO Auto-generated method stub
-		return null;
+		return new ContainerAnimus();
 	}
 
 	@Override
 	public String getGuiID() {
 		// TODO Auto-generated method stub
-		return "AssassinsCraft:Animus";
+		return "assassinscraft:animus";
 	}
     
 }
